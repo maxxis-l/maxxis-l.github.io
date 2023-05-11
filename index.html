@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+        <title>Газелист</title>
+</head>
+    
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="icons/logo.png" alt="Логотип"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn btn-success me-3" aria-current="page"
+                                href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary me-3" href="#services">Наши услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary me-3" href="#discount">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary me-3" href="#contact">Оставить заявку</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="header-right d-flex">
+                        <!-- <h3 class="header-right_title text-center me-3">Звоните нам круглосуточно</h3> -->
+                        <a href="tel:+77471879802" class="header-right_phone"><img src="icons/phone.png"
+                                class="header-right_img"
+                                alt="Phone Image"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="subheader mb-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="content">
+                        <h1>Грузоперевозки</h1>
+                        <p>Доставляем грузы по Алматы и Алматинской области!<br>Быстро, надежно и вовремя</p>
+                         <a href="#contact"><button type="button" class="btn btn-success">Узнать больше</button></a>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="img/bg.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="content">
+                        <h1>Опытные грузчики</h1>
+                        <p>Обеспечение отличного обслуживания клиентов на протяжении всего процесса
+                            переезда<br>Профессиональный подход к каждому клиенту</p>
+                        <a href="#contact"><button type="button" class="btn btn-success">Узнать больше</button></a>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="img/cip-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="content">
+                        <h1>+1000 Довольных клиентов!</h1>
+                        <p>С уверенностью можем сказать, мы удивим Вас работой и сервисом!</p>
+                         <a href="#contact"><button type="button" class="btn btn-success">Узнать больше</button></a>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="img/cip-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <section id="about">
+        <div class="container">
+            <h2 class="about_title text-center mb-3">Грузоперевозки по городу Алматы</h2>
+            <p class="about_text">Мы предоставляем полный спектр услуг по перевозке для квартир и офисов. Наша команда
+                профессионалов обладает опытом и навыками, чтобы обеспечить вам комфортный и безопасный переезд. Мы
+                заботимся о каждой детали, начиная с упаковки и организации грузов до доставки и размещения в новом
+                месте. Независимо от того, требуется ли вам перевезти небольшое количество вещей или осуществить
+                масштабный переезд офиса, мы готовы предложить наши профессиональные услуги. Доверьтесь нам, и вы
+                получите надежного партнера для вашего переезда, который сделает все возможное, чтобы обеспечить вас
+                удовлетворением и покоем во время этого процесса. Несомненным плюсом нашей
+                компании является широкий диапазон по параметрам тоннажа и грузоподъемности. Мы осуществляем
+                грузоперевозки следующих категорий:
+            </p>
+            <ul class="about-list">
+                <li class="about-list_item">до 1 тонны</li>
+                <li class="about-list_item">до 2 тонн</li>
+                <li class="about-list_item">до 3 тонн</li>
+                <li class="about-list_item">до 4 тонн</li>
+                <li class="about-list_item">до 5 тонн</li>
+            </ul>
+            <p class="about_text mb-3"> Наш официальный сайт грузоперевозок предусматривает возможность подать заявку в
+                режиме онлайн.
+                Заполнение несложной формы подачи заявки не отнимет много времени.
+            </p>
+            <div class="center">
+                 <a href="#contact" class="about_link"><button type="submit"
+                         class="btn btn-success mb-5"data-bs-toggle="modal"
+                         data-bs-target="#myModal">Рассчиать</button></a>
+            </div>
+           
+        </div>
+    </section>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Форма обратного звонка</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://formspree.io/f/xlekwjey" method="POST">
+                    <div class="input-group">
+                        <input class="input-group_input" type="text" name="name" placeholder="Ваше Имя" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input-group_input" type="tel" name="phone" placeholder="Номер телефона" required>
+                    </div>
+                    <button class="btn btn-success center mb-5" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <section id="services">
+        <div class="container">
+            <h2 class="services_title text-center mb-3">Наши Услуги</h2>
+            <div class="row">
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/kvt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Квартирный
+                            переезд</h5>
+                        <p class="card-text">Мы предлагаем качественные услуги по переезду квартир. Наша команда опытных
+                            профессионалов справится с перевозкой ваших вещей безопасно и эффективно. Мы предоставляем
+                            полный спектр услуг, включая упаковку, погрузку, транспортировку и разгрузку, чтобы
+                            облегчить весь процесс переезда для вас. Независимо от размера вашей квартиры или количества
+                            вещей, мы подберем оптимальное решение и обеспечим вам безмятежный переезд. Доверьтесь нам,
+                            и ваш переезд будет выполнен с профессионализмом и заботой о вашем имуществе.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/oth-city.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Междугородний переезд</h5>
+                        <p class="card-text">Мы обеспечим безопасную и эффективную перевозку ваших вещей в любую точку
+                            страны. Мы понимаем, что каждая доставка имеет свои особенности, поэтому мы предлагаем
+                            индивидуальный подход и гибкость в наших услугах.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/office.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Офисный
+                            переезд</h5>
+                        <p class="card-text">Мы предоставляем высококачественные услуги по транспортировке офисов. Наша
+                            команда опытных специалистов обладает экспертизой в переезде офисных помещений любого
+                            масштаба. Наша цель - обеспечить плавный переход вашего бизнеса в новое место без
+                            значительных прерываний в работе.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/mebel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Разборка /
+                            Сборка мебели</h5>
+                        <p class="card-text">Мы предлагаем услуги по разборке и сборке мебели. Наша опытная команда
+                            профессионалов обладает навыками и инструментами, чтобы легко и аккуратно разобрать и
+                            собрать вашу мебель. Мы заботимся о каждой детали и обеспечиваем правильную обработку
+                            каждого элемента. Независимо от типа мебели или ее сложности, мы готовы взять на себя эту
+                            задачу и обеспечить вам гладкую и быструю разборку и сборку.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/load.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Опытные
+                            грузчики</h5>
+                        <p class="card-text">Мы предоставляем услуги опытных грузчиков. Наша команда состоит из
+                            высококвалифицированных специалистов, готовых выполнить любую грузовую работу. Независимо от
+                            веса, формы или размера груза, наши грузчики обладают опытом и навыками, чтобы эффективно и
+                            безопасно загрузить и разгрузить ваши вещи. Мы предлагаем профессиональный подход и
+                            внимательность к каждому деталям, чтобы обеспечить надежную и безупречную работу. Доверьте
+                            нам свои грузовые потребности, и наши опытные грузчики справятся с задачей с максимальной
+                            ответственностью и эффективностью.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 col-l-4 display-center mb-4">
+                    <img src="img/trash.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Вывоз мусора
+                            после ремонта</h5>
+                        <p class="card-text">Наша команда готова взять на себя ответственность за устранение и
+                            утилизацию ненужных отходов. Мы осуществляем вывоз различных видов мусора, включая
+                            строительный, бытовой или коммерческий мусор. Наша цель - обеспечить чистоту и порядок в
+                            вашем окружении. Независимо от объема или сложности задачи, наши специалисты справятся с ней
+                            быстро и эффективно. Доверьтесь нам, и мы обеспечим вам качественный вывоз мусора, оставляя
+                            ваше пространство чистым и безопасным.</p>
+                        <a href="#contact" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="management">
+        <div class="container">
+            <h2 class="management_title text-center mb-4">Вот почему с нами стоит сотрудничать</h2>
+            <div class="row">
+                <div class="card display-center col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/24-hours.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Мы предоставляем услуги без выходных и праздничных дней. Специалисты
+                            компании круглосуточно на связи – они выполнят оперативное оформление заявки в любое время и
+                            готовы дать ответ на любой интересующий вас вопрос.</p>
+                    </div>
+                </div>
+                <div class="card display-center col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/euro.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Цены, которые в среднем на 40% ниже, чем у аналогичных фирм.</p>
+                    </div>
+                </div>
+                <div class="card display-center col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/time.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Возможна срочная подача транспорта в течение 20 минут с момента
+                            оформления заявки. Мы всегда рядом!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card display-center  col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/pin.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Мы предоставляем услуги без выходных и праздничных дней. Специалисты
+                            компании круглосуточно на связи – они выполнят оперативное оформление заявки в любое время и
+                            готовы дать ответ на любой интересующий вас вопрос.</p>
+                    </div>
+                </div>
+                <div class="card display-center col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/truck.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Цены, которые в среднем на 40% ниже, чем у аналогичных фирм.</p>
+                    </div>
+                </div>
+                <div class="card display-center col-12 col-md-6 col-l-4 mb-4">
+                    <img src="icons/courier.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Широкий спектр услуг, в том числе погрузка и разгрузка вещей,
+                            сборка/разборка мебели, а также элементов интерьера крупного габарита. Сотрудники компании
+                            являются профессионалами своего дела и регулярно проходят медкомиссию.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="contact_title text-center mb-4">
+                Форма обратного звонка
+            </h2>
+            <div class="contact_form">
+                <form action="https://formspree.io/f/xlekwjey" method="POST">
+                    <div class="input-group">
+
+                        <input class="input-group_input" type="text" name="name" placeholder="Ваше Имя" required>
+                    </div>
+                    <div class="input-group">
+
+                        <input class="input-group_input" type="tel" name="phone" placeholder="Номер телефона" required>
+                    </div>
+                    
+                    <button class="btn btn-success center mb-5" type="submit">Отправить</button>
+                </form>
+
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="discount">
+        <div class="container">
+            <div class="second-form title text-center mb-4 mt-5">
+                <h3 class="discount_title  mb-4">Мы тут чтобы радовать Вас!</h3>
+                <p class="discount_text text-center">
+                    Уважаемые клиенты! Мы рады предложить вам особую возможность сэкономить на грузоперевозках. Только у
+                    нас, в компании по грузоперевозкам, действует специальная скидка! Воспользуйтесь нашими услугами и получите скидку!. Мы гарантируем
+                    качественное
+                    обслуживание, надежную и безопасную доставку ваших грузов. Не упустите эту возможность сэкономить и
+                    свяжитесь с нами уже сегодня! Позвоните по нашему номеру или оставьте заявку на
+                    нашем
+                    сайте. Спасибо, что выбрали нашу компанию по грузоперевозкам!
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBkFnotfcbJl1kmMM7DeSzYKsJ301je-hZfcuOvQ8W8SxjHQ/viewform?usp=sf_link"
+                    class="send-form"><button class="btn btn-success" type="submit">Заполнить форму</button></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul class="menu-list d-flex">
+                    <li class="menu-list_item"><a href="#" class="menu-list_link">Главная</a></li>
+                    <li class="menu-list_item"><a href="#services" class="menu-list_link">Наши услуги</a></li>
+                    <li class="menu-list_item"><a href="#management" class="menu-list_link">Акции</a></li>
+                    <li class="menu-list_item"><a href="#form" class="menu-list_link">Оставить заявку</a></li>
+                </ul>
+
+            </nav>
+            <div class="social">
+                <a href="https://wa.link/b1yvlc" class="social_link"><img src="icons/w-a.png" alt=""
+                        class="social_img"></a>
+                <a href="#" class="social_link"><img src="icons/insta.png" alt="" class="social_img"></a>
+                
+                <a href="#" class="social_link"><img src="icons/mail.png" alt="" class="social_img"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+        
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+</html>
